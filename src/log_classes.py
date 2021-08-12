@@ -1,13 +1,14 @@
 import logging
-import pytest
 
 # General Guidelines for logging
 log_handler = logging.FileHandler('file.log')
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')
+logging.basicConfig(level=logging.INFO,
+                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+                    datefmt='%d-%b-%y %H:%M:%S')
 
 
 class SpecialChar:
-    def __init__(self, symbol:str) -> None:
+    def __init__(self, symbol: str) -> None:
         self.symbol = symbol
         logging.info(f'{symbol} has been initialized')
 
