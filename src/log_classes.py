@@ -21,6 +21,10 @@ class SpecialChar:
 
 
 def instance():
+    """
+    Creating an instance of the function to call from the main function
+    :return: Integer value of the Special Character
+    """
     return SpecialChar('#').convert_ordinal()
 
 
