@@ -6,4 +6,4 @@ def test_answer() -> None:
     Testing the ordinal function to ensure it is working as expected
     :return:
     """
-    assert SpecialChar('#').convert_ordinal() == 35
+    assert SpecialChar('#').ordinal_value() == 35
